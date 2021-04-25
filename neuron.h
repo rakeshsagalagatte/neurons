@@ -8,7 +8,6 @@ int and_neuron(float *inputN, float weight, int arraySize){
          sum = sum + inputN[i] * weight;
      }
      float threshold = weight * arraySize;
-     printf("%f , %f\n",sum, threshold );
      return (sum >= threshold);
 }
 
