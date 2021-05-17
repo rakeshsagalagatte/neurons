@@ -12,4 +12,7 @@ jobs:
       - name: List files in the repository
         run: | 
           ls ${{ github.workspace }}
+      - name: Checking syntax
+        run: |
+          cc ${{ github.workspace }}/neuron.h
       - run: echo "🍏 This job's status is ${{ job.status }}."
